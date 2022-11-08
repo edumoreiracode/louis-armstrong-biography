@@ -2,7 +2,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
+  width: 100%;
+}
+
+header {
+  width: 100%;
 }
 
 .cabecera {
@@ -10,22 +14,78 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: blueviolet;
-  /* background-image: url("https://c1.wallpaperflare.com/preview/480/982/519/trumpet-musical-instrument-wind-instrument-gold.jpg");
-  background-size: cover; */
-  padding: 5%;
+  background-color: rgb(72, 61, 139);
+  background-image: url("https://miboina.files.wordpress.com/2015/05/balada-de-trompeta.jpg");
+  background-size: cover;  
   color: whitesmoke;
-  text-shadow: 0px 0px 4px black;
+  height: 100vh;
+  width: 100%;
 }
 
 .cabecera img {
   margin: 5%;
   border-radius: 5px;
+  width: 25%;
 }
 
 .description {
   width: 45%;
   margin: 5%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.biografia {
+  width: 70%;
+}
+
+#botones {
+  font-size: 70%;
+}
+
+.discografia {
+  width: 70%;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.cont1 {
+  background-color: rgb(0, 0, 0);
+}
+
+#bio {
+  color: rgb(242,129,1);
+}
+
+.cont2 {
+  background-color: rgb(242,129,1);
+}
+
+.card:hover {
+  box-shadow: 5px 5px 0px rgb(0, 0, 0); 
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  color: whitesmoke;
 }
 
 @media (max-width: 953px) {
@@ -35,4 +95,16 @@ body {
     text-align: center;
   }
 
+  .biografia {
+    width: 90%;
+  }
+
+  .discografia {
+    width: 90%;
+  }
+
+  .cabecera img {
+    width: 50%;
+  }
+  
 }
